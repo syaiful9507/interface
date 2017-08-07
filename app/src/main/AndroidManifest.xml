@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="angga.code">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAaNb6qFt0sbvlzZE7Dhen6xjsh7jkfrxY"/>
+        <activity android:name="angga.code.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="angga.code.CourseDetail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="angga.code.test"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="angga.code.MapsActivity"
+            android:label="Maps"/>
+        <activity android:name="angga.code.About"
+            android:label="About"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>
